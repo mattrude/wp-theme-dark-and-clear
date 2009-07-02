@@ -1,0 +1,1131 @@
+/*
+Theme Name: mattrude.com
+Theme URI: http://www.mattrude.com
+Description: The mattrude.com theme.
+Version: 1.0
+Author: Matt Rude
+Author URI: http://www.mattrude.com
+Tags: two-columns, threaded-comments, sticky-post, right-sidebar
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+body {
+	font-size: 62.5%; /*Set font size so 1em = 10px*/
+	background: #333;
+	color: #333;
+	margin: 20px 0;
+	text-align: center; /*Center site on page in IE*/
+	font-family: verdana, arial, tahoma, serif;
+}
+a,
+a.link,
+a.visited {
+	color: #446592;
+	text-decoration: underline;
+}
+a:hover,
+a:active {
+	color: #6699CC;
+	}
+a:hover img,
+a:active img,
+a img:hover,
+a img:active,
+a.img:hover,
+a.img:active {
+	background: transparent;
+	}
+
+h1 a.standard {
+	color: #446592 !important;
+	background: transparent !important;
+	text-decoration: none;
+	font-weight: bold;
+	}
+h1 a.standard:hover {
+	color: #446592 !important;
+	background: transparent !important;
+	text-decoration: none;
+}
+h1 a, h2 a {
+	text-decoration: none;
+	color: #000;
+}
+h1 a:hover, h2 a:hover {
+	color: #446592;
+}
+h1.pagetitle { /* For title of categories, archives, and tags pages */
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 15px;
+	display: inline;
+	font-style: italic;
+}
+h3.pagetitle { /* For ...now browsing by "" for categories, archives, and tags pages */
+	display: inline;
+	color: #990000;
+	font-style: italic;
+}
+h3.archives {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+h3.archive_head {
+	font-size: 1.8em;
+	color: #000;
+}
+h3.archives a {
+	text-decoration: none;
+}
+h3.archives a.permalink {
+	border-bottom: 1px dotted #CCC;
+}
+	
+/*====: [STANDARD HTML STYLES] :================================*/
+h1, h2, h3 {
+	font-family: Calibri;
+	margin: 0 0 0 0;
+	font-weight: normal;
+	}
+h1 {
+	font-size: 2.4em;
+	margin: 5px 0;
+	}
+h1.attr {
+	background: url('images/post-separator.jpg') no-repeat bottom left;
+	padding-bottom: 10px;
+	}
+h2 {
+	font-size: 2.4em;
+	margin: 5px 0;
+	}
+h2.attr {
+	background: url('images/post-separator.jpg') no-repeat bottom left;
+	padding-bottom: 7px;
+}
+h3 {
+	font-size: 1.6em;
+	margin: 5px 0;
+	}
+h4 {
+	font-size: .9em;
+}
+h5 {
+	font-size: .8em;
+}
+h6 {
+	font-size: .6em;
+}
+p {
+	margin: 3px 0 10px 0;
+	padding: 0px;
+	}
+hr.postdiv {
+	border: 15px solid #EEE; /* Set height in Firefox */
+	margin: 10px 0;
+	background: #EEE;
+	height: 30px; /* Set height in IE */
+	padding: 0;
+	}
+ul {
+	margin-left: 0;
+	padding-left: 15px;
+}
+
+blockquote {
+	background: url('images/quotes-bg.gif') no-repeat left top;
+	font-style: italic;
+	color: #454545;
+	margin-left: 0;
+	padding-left: 45px;
+	min-height: 43px;
+	height: auto !important;
+	height: 43px;
+}
+blockquote p {
+	margin: 0 !important;
+}
+blockquote blockquote {
+	background: none;
+	border-left: 2px solid #CCC;
+	padding-left: 5px;
+	margin-left: 20px;
+}
+
+abbr[title], acronym[title] {
+	cursor: help;
+}
+
+pre {
+	overflow: auto;
+	padding: 5px;
+	display: block;
+}
+
+/*====: [PREFORMATTED & CODE STYLES] :==========================*/
+code {
+	font: 1em 'Courier New', Courier, Fixed;
+	text-align: left;
+	background: #DFDFDF;
+/*	border-left: 5px solid #96A7BE;*/
+	display: block;
+	padding: 5px;
+	white-space: nowrap;
+	overflow: auto;
+	}
+span.code {
+	display: inline;
+	padding: 1px;
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	background: #EEE;
+	font-family: 'Courier New',Courier,Fixed;
+}
+
+/*===== Contact Form CSS Formatting =================*/
+
+#wpcf label {
+	clear: both;
+	display: block;
+	float: left;
+	width: 200px;
+}
+#wpcf input {
+	float: left;
+	width: 200px;
+	padding: 1px;
+	margin: 2px 5px 2px 0;
+}
+#wpcf textarea {
+	width: 550px;
+	height: 300px;
+	padding: 1px;
+	margin: 0 5px 10px 0;
+}
+#wpcf #contactsubmit {
+	margin-left: 450px;
+	width: 100px;
+}
+
+
+/*====: [GENERIC ELEMENTS & HACKS] :=============================*/
+.clearfloat {
+	clear: both;
+	height: 0px;
+	line-height: 0px;
+	margin: 0;
+	padding: 0;
+}
+.clearfloatthick {
+	clear: both;
+	height: 15px;
+	line-height: 15px;
+	margin: 0;
+	padding: 0;
+}
+.centerer { /* IE hack to center child element inside parent */
+	width: 100%;
+	text-align: center;
+}
+.txtalignleft {
+	text-align: left;
+}
+.txtalignright {
+	text-align: right;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.bottomdotted {
+	border-bottom: 1px dotted #D44942;
+	display: block;
+	padding: 10px;
+	}
+.marginbottom {
+	margin-bottom: 10px;
+	}
+.hidden {
+	/* Javascript hides this div on page load */
+	display: block;
+}
+a.arrows {
+	outline: none;
+	display: inline;
+}
+a.arrows:hover {
+	background: transparent;
+}
+a img.arrows {
+	width: 18px;
+	height: 10px;
+	border: none;
+	line-height: 10px;
+	margin-left: 5px;
+}
+a:hover img.arrows {
+	background: transparent;
+}
+a.showhide_link {
+	font-size: .6em;
+	color: #888;
+}
+a.showhide_link:hover {
+	background: transparent;
+}
+
+/*====: [CORE LAYOUT ELEMENTS] :================================*/
+#container {
+	width: 920px;
+	text-align: left; /*Reset center align inheretence from body*/
+	margin: 0 auto; /*Center site on page in Mozilla*/
+}
+h1#masthead {
+	color: #446592;
+	font-size: 2.8em;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin-right: 10px;
+}
+#masthead_wrapper {
+	margin: 0 35px;
+	width: auto;
+	border: none;
+	padding: 0;
+	text-align: left;
+}
+h2#tagline {
+	font-size: 1.7em;
+	font-style: italic;
+	text-align: left;
+	display: inline-block;
+}
+#wrapper {
+	width: 100%;
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+	border: 1px solid #CCC;
+	}
+#header {
+	width: 100%;
+        border: none;
+	text-align: center; /*Center child #headerimg in IE*/
+	position: relative;
+	margin: 0;
+}
+#headerimg {
+	margin: 0 auto;
+/*	width: 850px;
+	hight: 200px;*/
+	clear: both;
+/*      -moz-border-radius: 14px;
+        -webkit-border-radius: 14px;
+        border-radius: 14px;
+	border: 1px solid #CCC;*/
+}
+#content {
+	margin: 5px 35px 0;
+	font-size: 1.2em;
+	width: 575px;
+	float: left;
+	display: inline;
+}
+#footer {
+	clear: both;
+	margin: 0 35px;
+	text-align: right;
+	padding: 5px 0;
+	border-top: 1px solid #CCC;
+	}
+/*====: [RSS & EMAIL SUBSCRIBE LINKS] :==========================*/
+#subscribe {
+	position: absolute;
+	width: 35px;
+	left: 0px;
+	bottom: 0px;
+	text-align: center;
+}
+#subscribe a img {
+	border: none;
+}
+#subscribe #emailbubble {
+	text-align: left;
+	background: transparent;
+	position: absolute;
+	display: block;
+	width: 210px;
+	left: -999px;
+	top: 35px;
+	height: 45px;
+	font-weight: bold;
+}
+#subscribe #emailbubble_inner1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#subscribe #emailbubble_pointer {
+	background: url('images/comment-pointer_up.gif') no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 11px;
+}
+#subscribe #emailbubble_inner2 {
+	background: #FFFFCC;
+	border: 1px solid #555;
+	padding: 5px;
+}
+#spacer {
+	height: 10px;
+	width: 100%;
+}
+#subscribe #feedbubble {
+	text-align: left;
+	background: transparent;
+	position: absolute;
+	display: block;
+	width: 210px;
+	left: -999px;
+	bottom: 35px;
+	height: 45px;
+	font-weight: bold;
+}
+#subscribe #feedbubble_inner1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#subscribe #feedbubble_pointer {
+	background: url('images/comment-pointer_down.gif') no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+}
+#subscribe #feedbubble_inner2 {
+	background: #FFFFCC;
+	border: 1px solid #555;
+	margin-bottom: 8px;
+	padding: 5px;
+}
+/*====: [SIDEBAR ELEMENTS] :==================================*/
+#sidebar {
+	width: 228px;
+	float: right;
+	margin: 20px 35px 0 0;
+	font-size: 1.3em;
+	display: inline;
+	}
+#sidebar span.sidetitle {
+	color: #333;
+	padding: 3px;
+	text-transform: uppercase;
+	display: block;
+	font-family: Calibri;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	margin: 0;
+
+	border-bottom: 1px solid #333;
+}
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+#sidebar li {
+	list-style: none;
+	margin: 15px 0;
+	padding: 0;
+}
+#sidebar li li {
+	margin: 0;
+}
+#sidebar a {
+	display: block;
+	color: #222;
+	text-decoration: none;
+	padding: 7px;
+	font-size: 1.1em;
+	font-family: Arial, verdana, tahoma, Helvetica, sans-serif;
+	margin: 0;
+}
+#sidebar a:hover {
+	color: #222;
+	background: #EDEDED;
+	}
+#sidebar ul.children li a{
+	border-left: 10px solid #EDEDED;
+}
+#sidebar ul.children ul.children li a {
+	border-left: 20px solid #EDEDED;
+}
+#sidebar ul.children ul.children ul.children li a {
+	border-left: 30px solid #EDEDED;
+}
+/*
+* The borders above are for child categories - they go 3 levels deep
+* If you want more than that, add another style, and know that you're
+* far too obsessed with child categories ;-)
+*/
+
+/*====: [SEARCH FORM STYLES] :=================================*/
+form#searchform {
+	margin-bottom: 10px;
+}
+form#searchform input#s {
+	width: 225px;
+	height: 20px;
+	font-style: italic;
+	font-size: 1.2em;
+	color: #446592;
+	}
+
+/*====: [SINGLE POST ELEMENTS] :================================*/
+.single h1 {
+	font-size: 2.4em;
+	color: #000;
+	}
+.summary {
+	font-style: italic;
+	border: 1px solid #CCC;
+	padding: 5px 5px;
+	width: 90%;
+	margin: 0 auto;
+	text-align: justify;
+	font-size: .9em;
+}
+.summary p {
+	margin: 0;
+}
+span.summarywords {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*====: [POST LEVEL ELEMENTS] :=================================*/
+.post {
+	margin: 0;
+	padding: 0;
+}
+.post a {
+
+}
+.post a:hover {
+
+	}
+small {
+	color: #999;
+	margin: 0;
+	}
+small.attr {
+	background: url('images/post-separator.jpg') no-repeat bottom left;
+	padding-bottom: 10px;
+	display: block;
+	margin-top: -5px;
+	}
+.entry {
+	font-size: 1.2em;
+	margin: 20px 0;
+}
+.entry p {
+	margin: 20px 0;
+}
+.entry h1 {
+	font-size: 2.0em;
+}
+.entry h2 {
+	font-size: 1.9em;
+	display: inline;
+	border-bottom: 1px dotted #CCC;
+}
+.entry h3 {
+	font-size: 1.6em;
+}
+.entry h4 {
+	font-size: 1em;
+}
+p.postmetadata {
+	color: #999;
+	background: #EEE;
+	padding: 5px 5px;
+	margin-bottom: 30px;
+        -moz-border-radius: 9px;
+        -webkit-border-radius: 9px;
+        border-radius: 9px;
+	border: 1px solid #CCC;
+}
+p.postmetadata1 {
+	color: #999;
+}
+
+/*====: [POST NAVIGATION ELEMENTS] :=============================*/
+.navigation {
+	width: 100%;
+	text-align: center;
+	line-height: 100%;
+	font-size: .8em;
+}
+.navigation a {
+	padding: 2px;
+}
+
+
+/*====: [POST/PAGE NOT FOUND ELEMENTS] :==========================*/
+h2.center {
+
+}
+p.center {
+
+}
+
+/*====: [NAVIGATION ELEMENTS] :=================================*/
+#nav_menu {
+	text-align: right;
+	font-size: 1.7em;
+	height: 30px;
+	overflow: hidden;
+}
+#nav_menu ul {
+	float: right;
+	margin: 0;
+}
+#nav_menu li {
+	float: left;
+	list-style: none;
+}
+#nav_menu li a,
+#nav_menu li a:visited,
+#nav_menu li a:link {
+	background: #CCC;
+	color: #333;
+	display: block;
+	margin-left: 3px;
+	text-decoration: none;
+	padding: 5px 10px;
+	}
+#nav_menu li a:hover,
+#nav_menu li a:active,
+#nav_menu li a.current {
+	background: #FFF !important;
+	color: #333 !important;
+	}
+	
+/*====: [ (NEW) ARCHIVES STLYES] :===================================*/
+#archives_month .indent,
+#archives_category .indent,
+#archives_tag .indent {
+	margin-left: 25px;
+}
+#archives_month,
+#archives_category,
+#archives_tag {
+	margin-top: 7px;
+}
+#archives_month p {
+	margin-bottom: 10px;
+}
+
+#archives_category p {
+	margin-bottom: 10px;
+}
+#archives_tag {
+	margin-bottom: 10px;
+}
+#archives_tag a {
+	text-decoration: none;
+}
+
+h3.archives {
+
+}
+
+.tagcloud {
+	background: #FFFFCC;
+	border: 1px solid #999;
+	padding: 10px;
+	text-align: center;
+	line-height: 22pt;
+}
+#description {
+	background: #FFFFCC;
+	border: 1px solid #999;
+	padding: 10px;
+	text-align: center;
+	margin: 8px 0;
+}
+#top_tabs {
+	border-bottom: 1px dotted #CCC;
+	border-top: 1px dotted #CCC;
+}
+#top_tabs ul {
+	margin: 0;
+	padding: 0;
+}
+li.top_tab {
+	float: left;
+	margin-right: 3px;
+	background: #BBB;
+	list-style: none;
+	display: inline;
+	padding: 0;
+	height: 30px;
+}
+li.top_tab a {
+	text-decoration: none;
+	font-size: 1.4em;
+	padding: 5px;
+	width: auto;
+	display: block;
+}
+
+/*====: [ (OLD) ARCHIVES STLYES] :===================================*/
+#old_archives ul {
+	margin-left: 30px;
+}
+#old_archives li {
+	line-height: 150%;
+	list-style: none;
+	padding: 5px 5px;
+	font-size: 1.3em;
+}
+#old_archives li a {
+	text-decoration: none;
+	display: block;
+	border-bottom: 1px dotted #CCC;
+}
+#old_archives ul ul li {
+	font-size: 1em;
+}
+
+/*====: [COMMENT STYLES] :====================================*/
+h3#comments {
+	margin-top: 20px;
+	}
+	
+ol.commentlist {
+	/*background: #FFF url('images/comment-sideimage.gif') repeat-y;*/
+	padding: 0;
+	position: relative;
+	margin-left: 0;
+}
+ol.commentlist li {
+	width: 575px;
+	margin-top: 10px;
+	list-style: none;
+	min-height: 80px;
+	background: url('images/comment-sideimage.gif') repeat-y left;
+}
+ol.commentlist li p {
+	margin-top: 10px;
+	margin-left: 5px;
+}
+ol.commentlist li cite {
+	margin: 0 0 0 5px;
+	font-weight: bold;
+}
+ol.commentlist li cite a {
+	text-decoration: none;
+}
+.commentwrap {
+	margin-left: 40px;
+	min-height: 80px;
+	height: auto !important;
+	height: 80px;
+	border: 1px solid #CCC;
+}
+.commentmetadata {
+	margin: 0 0 0 5px;
+	}
+li.author .commentwrap {
+	background: url('images/comment-bg.png') repeat-y;
+	border: 1px solid #446592;
+}
+img.avatar {
+	float: right;
+	width: 80px;
+}
+li.author img.avatar {
+	float: right;
+	width: 80px;
+}
+.avatar-default {
+	display: none !important;
+}
+ol.commentlist .commentsidebar {
+	margin: 8px 0 0 6px;
+	font-size: 1.4em;
+	color: #afafbe;
+	text-align: center;
+	letter-spacing: -1px;
+	float: left;
+	background: transparent;
+	display: inline;
+}
+ol.commentlist .commentsidebarupper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('images/comment-sideimage-upper.gif') no-repeat;
+	z-index: 1;
+	width: 40px;
+	height: 16px;
+	line-height: 16px;
+}
+ol.commentlist .sidebarseparator {
+	position: absolute;
+	left: 0;
+	background: #FFF;
+	height: 10px;
+	width: 40px;
+	margin-top: -11px;
+}
+ol.commentlist .commentmo {
+	
+	}
+ol.commentlist .commenttime {
+	font-size: .6em;
+	}
+span.required {
+	color: red;
+	font-weight: bold;
+	}
+#allowedtags {
+	background: #EEE;
+	float: right;
+	width: 230px;
+	color: #555;
+	padding: 0 10px;
+}
+#allowedtagstxt {
+	display:block;
+	border-bottom: 1px dotted #D44942;
+	}
+span.tags {
+	padding: 3px 10px;
+	display: block;
+	color: #777;
+	font-family: Lucida Console, Monaco, monospace;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #DDD;
+}
+form#commentform label {
+	font-weight: bold;
+}
+input#submit {
+	background: #EEE url('images/submit_bg.gif') repeat-x;
+	border: 1px solid #AAA;
+	height: 25px;
+	width: 125px;
+	cursor: pointer;
+	}
+input#submit:hover {
+	background: #EDEDED;
+	}
+form#commentform input.text {
+	width: 575px;
+}
+form#commentform textarea {
+	width: 575px;
+}
+
+h3.trackbacks {
+	clear: both;
+	margin-top: 40px;
+}
+ol.tpbacks {
+	background: #CCC;
+	padding: 2px 2px 2px 25px;
+}
+ol.tpbacks li {
+	list-style-position: outside;
+}
+
+/*====: [WP 2.7 COMMENT STYLES] :======================*/
+ol.commentlist li {
+	position: relative;
+}
+
+ol.commentlist li.comment {
+	border: 3px solid #DDD;
+	width: auto;
+	background: #FFF;
+}
+ol.commentlist li.bypostauthor {
+	background: #EEE;
+}
+ol.commentlist li em {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 5px;
+	background: #FDF7DC;
+	border: 2px solid #EEEAB6;
+	color: #9E9F00;
+	font-weight: bold;
+}
+ol.commentlist li p {
+	margin-left: 45px;
+	margin-top: 20px;
+}	
+div.reply {
+	margin-left: 45px;
+	margin-bottom: 8px;
+}
+div.reply a {
+	text-decoration: none;
+	border: 1px dotted #CCC;
+	padding: 4px;
+	background: #EEE;
+}
+div.reply a:hover {
+	border-color: #000;
+}
+
+img.avatar {
+	width: auto;
+	padding: 2px;
+	border: 2px solid #DDD;
+	float: left;
+	margin: 2px 0 0 2px;
+}
+
+.vcard {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: .9em;
+	width: 240px;
+}
+
+.commentmetadata {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: .8em;
+}
+.commentmetadata a {
+	text-decoration: none;
+}
+a#cancel-comment-reply-link {
+	text-decoration: none;
+	border: 1px dotted #CCC;
+	padding: 2px;
+	background: #EEE;
+	font-weight: bold;
+	margin-left: 45px;
+}
+a#cancel-comment-reply-link:hover {
+	border-color: #000;
+}
+	 
+
+/*====: [SEARCH RESULTS PAGE] :============================*/
+#searchdate {
+	font-size: .9em;
+	color: #AAA;
+	margin-right: 7px;
+	width: 60px;
+}
+#searchcomments {
+	display: inline;
+}
+#searchcomments a {
+	text-decoration: none;
+	font-size: 1.2em;
+}
+h2.searchtitle {
+	font-size: 1.4em;
+	display: inline;
+	padding-bottom: 2px;
+}
+div.search_hr {
+	height: 1px;
+	line-height: 1px;
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 2px;
+}
+.entrysearch {
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+.searchmeta {
+	font-style: italic;
+	color: #990000;
+	font-size: 1.2em;
+}
+
+/*====: [ERROR PAGES] :=================================*/
+.fourohfour {
+	font-size: 1.4em;
+}
+.fourohfour form#searchform input#s {
+	font-size: 1em;
+}
+#container_error {
+	width: 650px;
+	text-align: left;
+	margin: 0 auto;
+}
+.fourohfour ol {
+	margin: 20px 0px;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+}
+.fourohfour li {
+	list-style: none;
+	border-bottom: 1px dotted #CCC;
+	padding: 5px;
+}
+.fourohfour li a {
+	text-decoration: none;
+}
+
+/*====: [CALENDAR STYLES] :=============================*/
+#sidebar li.calendar {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	margin: 5px;
+	text-align: center;
+}
+#sidebar table#wp-calendar caption {
+	text-align: center;
+	margin: 0 auto;
+}
+#sidebar table#wp-calendar {
+	margin: 0 auto;
+}
+#sidebar table#wp-calendar td {
+	padding: 2px;
+}
+#sidebar table#wp-calendar a {
+	font-weight: bold;
+	text-decoration: underline;
+	padding: 0;
+}
+#sidebar table#wp-calendar td#prev a,
+#sidebar table#wp-calendar td#next a {
+	color: #222;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*====: [DAGON DESIGN SITEMAP GENERATOR STYLES] :===============*/
+div.ddsg-wrapper li {
+}
+div.ddsg-wrapper li li {
+	margin: 7px 0;
+}
+div.ddsg-wrapper li a {
+	text-decoration: none;
+	padding: 0 3px;
+}
+div.ddsg-wrapper li li a {
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 3px;
+}
+
+/*====: [REQUIRED BY WORDPRESS] :=========*/
+.aligncenter {
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+/*====: [IMAGE CAPTION] :==============*/
+.wp-caption {
+	text-align: center;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #f7f7f7;
+	border: 1px solid #CCC;
+}
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #CCC;
+}
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+p.wp-caption-text {
+	margin: 0;
+	font-variant: small-caps;
+	font-size: .7em;
+	font-weight: bold;
+	line-height: 100%;
+	padding: 2px 0 7px 0;
+	color: #777;
+}
+
+/*====: [CREDITS] :===========*/
+span.credits {
+	font-style: italic;
+}
+
+/*====: [TABLE STYLES] :==============*/
+table {
+	border: 1px solid #CCC;
+	font-size: .9em;
+}
+th {
+	background: #EDEFF0;
+	padding: 3px 10px;
+	text-align: left;
+}
+td {
+	border-top: 1px solid #CCC;
+	padding: 3px 10px;
+}
+tr.even td {
+	background: #EEE;
+}
+form p {
+	margin: 15px 0 5px 0;
+}
+/*====: [STICKY POSTS] :====================*/
+.homepage .sticky {
+	border: 1px solid #bbb;
+	border-width: 1px;
+	background: #E4E2D3;
+	margin-bottom: 20px;
+	padding: 10px;
+	color: #757171;
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+}
+.homepage .sticky small.attr {
+	background-image: none;
+}
+.homepage .sticky p.postmetadata {
+	margin-bottom: 0;
+	border-top: 1px solid #CCC;
+	background-color: transparent;
+}

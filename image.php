@@ -1,0 +1,61 @@
+<?php get_header(); ?>
+
+<div id="content">
+
+<div id="adunit">
+	<img src="<?php bloginfo('template_url'); ?>/images/ad-unit_468x60_07-04-08.gif" width="468" height="60" />
+</div>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	
+	<div class="single"><!--Slightly different styling for single posts and single pages-->
+		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<h1><?php the_title(); ?></h1>
+			<small class="attr"><?php the_time('F jS, Y') ?></small>
+			<div class="entry">
+				<p class="attachment"><a href="<?php echo wp_get_attachment_url($post->ID); ?>"><?php echo wp_get_attachment_image( $post->ID, 'medium' ); ?></a></p>
+				<div class="caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt(); // this is the "caption" ?></div>
+
+				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
+	
+	<div class="navigation">
+		<div class="floatleft"><?php previous_image_link('&laquo; %link') ?></div>
+		<div class="floatright"><?php next_image_link('%link &raquo;') ?></div>
+		<div class="clearfloatthick">&nbsp;</div>
+	</div>
+			</div><!--close entry class-->
+			<p class="postmetadata">Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?><br /><?php the_tags('Tags: ', ', ', '<br />'); ?></p>
+			<p class="postmetadata1 alt">
+					<small>
+						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
+							// Both Comments and Pings are open ?>
+							<!--You can <a href="#respond">leave a response</a>, or <a href="<?php trackback_url(); ?>" rel="trackback">trackback</a> from your own site.-->
+	
+						<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
+							// Only Pings are Open ?>
+							Responses are currently closed, but you can <a href="<?php trackback_url(); ?> " rel="trackback">trackback</a> from your own site.
+	
+						<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
+							// Comments are open, Pings are not ?>
+							You can skip to the end and leave a response. Pinging is currently not allowed.
+	
+						<?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
+							// Neither Comments, nor Pings are open ?>
+							Both comments and pings are currently closed.
+	
+						<?php } ?>
+					</small>
+				</p><!--close p.postmetadata alt-->
+		</div><!--close post class & post# id-->
+	</div><!--close single class-->
+	
+<?php comments_template(); ?>
+
+<?php endwhile; else: ?>
+
+	<p>Sorry, no posts matched your criteria.</p>
+
+<?php endif; ?>
+
+	</div><!--close content id-->
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

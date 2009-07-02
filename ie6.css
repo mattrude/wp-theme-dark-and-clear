@@ -1,0 +1,39 @@
+#content {
+	margin-right: 25px;
+}
+#sidebar a {
+	border-top: none !important;
+}
+.bottomdotted {
+	background: url('images/ie-dotted-border.gif') repeat-x bottom;
+	border-bottom: none !important;
+}
+h3.archives a.permalink {
+	border-bottom: none;
+	background: url('images/ie-dotted-border-grey.gif') repeat-x bottom;
+	padding-bottom: 3px;
+}
+#top_tabs {
+	border-bottom: none;
+	border-top: none;
+	background: url('images/ie-dotted-border-grey.gif') repeat-x bottom;
+}
+#allowedtagstxt {
+	background-image: url('images/ie-dotted-border.gif');
+	background-repeat: repeat-x;
+	background-position: bottom;
+	padding-bottom: 1px;
+	border-bottom: none;
+}
+#sidebar li a {display:inline-block !important;}
+#sidebar li a {display:block !important;}
+
+#subscribe #emailbubble_pointer {
+	top: 1px;
+}
+#subscribe #feedbubble_pointer {
+	bottom: -3px;
+}
+.commentwrap {
+	margin-left: 37px;
+	}
