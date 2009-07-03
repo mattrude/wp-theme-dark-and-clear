@@ -118,6 +118,9 @@ class ControlPanel
 					$ToPrint .= '<p class="submit custom"><input name="save" type="submit" value="Save All Changes" /><input type="hidden" name="action" value="save" /></p>';
 					$ToPrint .= "</div></div>";
 					break;
+				case 'End':
+					$ToPrint .= "</div></div>";
+					break;
 				case 'Text':
 					if(isset($Label)) $ToPrint .= '<label for="' .  $ID . '">' . $Label . '<br>';
 					$ToPrint .= '<input class="textbox" id="' . $ID . '" name="' .  $ID . '"  type="text" value="' . ($Settings[$ID]) . '"/>';

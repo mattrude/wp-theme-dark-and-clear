@@ -46,7 +46,7 @@ array
 //	),
 	array
 	(
-		Type=>'Close'
+		Type=>'End'
 	),
 	array
 	(
