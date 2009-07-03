@@ -1,4 +1,6 @@
 <?php
+require_once('control-panel.php');
+
 if(function_exists('register_sidebar'))
 	register_sidebar(array (
 		'before_widget' => '<li>',
@@ -18,4 +20,54 @@ function legacy_comments($file) {
 	
 	return $file;
 }
+
+$Options =
+array
+(
+	array
+	(
+		'Type'=>'Title',
+		'Value'=>'General Settings'
+	),
+	array
+	(
+		'Type'=>'TextArea',
+		'ID'=>'FooterText',
+		'Label'=>'Footer Text',
+		'Description' => 'Add a footer to the bottom of ever page.'
+	),
+//	array
+//	(
+//		'Type'=>'CheckBox',
+//		'ID'=>'ShowWPLink',
+//		'Label'=>'Show WordPress Link',
+//		'Description' => 'Check this box if you wish to show the wordpress credit in the footer.',
+//		'Default'=> 'true'
+//	),
+	array
+	(
+		Type=>'Close'
+	),
+	array
+	(
+		'Type'=>'Title',
+		'Value'=>'Gallery 2 module'
+	),
+	array
+	(
+		'Type'=>'Text',
+		'ID'=>'GalleryURL',
+		'Label'=>'Random Image Gallery URL',
+		'Description'=>'This is the URL of your Gallery2 install <br /> ie: http://www.example.com/gallery'
+	),
+	array
+	(
+		Type=>'Close'
+	)
+);
+
+$Panel = new ControlPanel('Dark and Clear');
+$Panel->SetOptions($Options);
+$Panel->Initialize();
+
 ?>

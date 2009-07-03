@@ -2,7 +2,11 @@
 	<ul>
 	<li><span class="sidetitle">Random Image</span></li>
 	<center>
-         <?php @readfile("http://127.0.0.1/gallery/main.php?g2_view=imageblock.External&g2_blocks=randomImage&g2_exactSize=200&g2_show=title|date"); ?>
+        <?php
+		global $Panel;
+		$G2URL = $Panel->Settings('GalleryURL');
+		@readfile("$G2URL/main.php?g2_view=imageblock.External&g2_blocks=randomImage&g2_exactSize=200&g2_show=title|date");
+	?>
         </center>
 	<?php 	/* Widgetized sidebar, if you have the plugin installed. */
 	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>

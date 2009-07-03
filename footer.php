@@ -1,7 +1,7 @@
 <div class="clearfloatthick"></div>
 <div id="footer">
 	<p>
-		 Copyright &copy; 2004-2009 by Matt Rude, All Rights Reserved • <a href="http://www.mattrude.com/contact-me/">Contact Me</a>
+		<?php global $Panel; echo $Panel->Settings('FooterText'); ?>
 	</p>
 </div>
 </div>
