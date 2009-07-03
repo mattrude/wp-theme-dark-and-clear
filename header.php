@@ -84,5 +84,14 @@
 			</div>
 			
 			<div id="headerimg">
+				<?php if(is_home()) { ?>
+					<img src="<?php bloginfo('template_url'); ?>/images/header_images/header1.jpg" title="<?php bloginfo('name'); ?> Random Header Image" />
+				<?php }elseif(is_single()) { ?>
+					<img src="<?php bloginfo('template_url'); ?>/images/header_images/header2.jpg" title="<?php bloginfo('name'); ?> Random Header Image" />
+				<?php }elseif(is_page()) { ?>
+					<img src="<?php bloginfo('template_url'); ?>/images/header_images/header3.jpg" title="<?php bloginfo('name'); ?> Random Header Image" />
+				<?php }else{ ?>
+					<img src="<?php bloginfo('template_url'); ?>/images/header_images/header1.jpg" title="<?php bloginfo('name'); ?> Random Header Image" />
+				<?php } //endif ?>
 			</div>
 		</div><!--close header id-->
