@@ -84,6 +84,5 @@
 			</div>
 			
 			<div id="headerimg">
-				<?php show_media_header(); ?>
 			</div>
 		</div><!--close header id-->
