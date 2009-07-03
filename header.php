@@ -21,6 +21,11 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <script src="<?php bloginfo('template_url'); ?>/js/ThemeJS.js"></script>
+<!--LightBox 2 Setup-->
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/prototype.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/lightbox.js"></script>
+
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
