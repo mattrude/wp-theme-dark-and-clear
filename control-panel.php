@@ -69,7 +69,7 @@ class ControlPanel
 	
 	function AdminHead()
 	{
-	/*	echo '<link rel="stylesheet" href="'.get_bloginfo('template_url').'/control-panel.css" type="text/css" media="screen" />';*/	
+		echo '<link rel="stylesheet" href="'.get_bloginfo('template_url').'/control-panel.css" type="text/css" media="screen" />';
 	}
 	function SetOptions($Options)
 	{
