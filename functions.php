@@ -82,7 +82,7 @@ array
 		'Type'=>'CheckBox',
 		'ID'=>'GoogleAnalyticsEnabled',
 		'Label'=>'Enable Google Analytics',
-		'Description' => '',
+		'Description' => 'This module requres a <a href="http://analytics.google.com">Google Analytics</a> account.',
 		'Default'=> 'false'
 	),
 	array
@@ -90,7 +90,7 @@ array
 		'Type'=>'Text',
 		'ID'=>'GoogleAnalyticsID',
 		'Label'=>'Google Analytics ID',
-		'Description'=>''
+		'Description'=>'Enter your <a href="http://analytics.google.com">Google Analytics</a> account ID.'
 	),
 	array
 	(
