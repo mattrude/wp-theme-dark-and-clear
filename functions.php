@@ -31,19 +31,19 @@ array
 	),
 	array
 	(
+		'Type'=>'CheckBox',
+		'ID'=>'LightboxEnabled',
+		'Label'=>'Enable Lightbox images module',
+		'Description' => 'This may interfere with some plugins.',
+		'Default'=> 'false'
+	),
+	array
+	(
 		'Type'=>'TextArea',
 		'ID'=>'FooterText',
 		'Label'=>'Footer Text',
 		'Description' => 'Add a footer to the bottom of ever page.'
 	),
-//	array
-//	(
-//		'Type'=>'CheckBox',
-//		'ID'=>'ShowWPLink',
-//		'Label'=>'Show WordPress Link',
-//		'Description' => 'Check this box if you wish to show the wordpress credit in the footer.',
-//		'Default'=> 'true'
-//	),
 	array
 	(
 		Type=>'End'
