@@ -57,7 +57,7 @@ array
 	(
 		'Type'=>'CheckBox',
 		'ID'=>'Gallery2Enabled',
-		'Label'=>'Enable Gallery 3 module',
+		'Label'=>'Enable Gallery 2 module',
 		'Description' => '',
 		'Default'=> 'false'
 	),
