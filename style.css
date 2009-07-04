@@ -462,6 +462,9 @@ h2#tagline {
 	margin: 0;
 }
 #sidebar a:hover {
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
 	color: #222;
 	background: #EDEDED;
 	}
