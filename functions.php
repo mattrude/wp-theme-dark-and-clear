@@ -33,7 +33,7 @@ array
 	(
 		'Type'=>'CheckBox',
 		'ID'=>'LightboxEnabled',
-		'Label'=>'Enable Lightbox images module',
+		'Label'=>'<strong>Enable Lightbox images module</strong>',
 		'Description' => 'This may interfere with some plugins.',
 		'Default'=> 'false'
 	),
@@ -41,7 +41,7 @@ array
 	(
 		'Type'=>'TextArea',
 		'ID'=>'FooterText',
-		'Label'=>'Footer Text',
+		'Label'=>'<strong>Footer Text</strong>',
 		'Description' => 'Add a footer to the bottom of ever page.'
 	),
 	array
@@ -57,7 +57,7 @@ array
 	(
 		'Type'=>'CheckBox',
 		'ID'=>'Gallery2Enabled',
-		'Label'=>'Enable Gallery 2 module',
+		'Label'=>'<strong>Enable Gallery 2 module</strong>',
 		'Description' => '',
 		'Default'=> 'false'
 	),
@@ -65,7 +65,7 @@ array
 	(
 		'Type'=>'Text',
 		'ID'=>'GalleryURL',
-		'Label'=>'Random Image Gallery URL',
+		'Label'=>'<strong>Random Image Gallery URL</strong>',
 		'Description'=>'This is the URL of your Gallery2 install <br /> ie: http://www.example.com/gallery'
 	),
 	array
@@ -81,7 +81,7 @@ array
 	(
 		'Type'=>'CheckBox',
 		'ID'=>'GoogleAnalyticsEnabled',
-		'Label'=>'Enable Google Analytics',
+		'Label'=>'<strong>Enable Google Analytics</strong>',
 		'Description' => 'This module requres a <a href="http://analytics.google.com">Google Analytics</a> account.',
 		'Default'=> 'false'
 	),
@@ -89,7 +89,7 @@ array
 	(
 		'Type'=>'Text',
 		'ID'=>'GoogleAnalyticsID',
-		'Label'=>'Google Analytics ID',
+		'Label'=>'<strong>Google Analytics ID</strong>',
 		'Description'=>'Enter your <a href="http://analytics.google.com">Google Analytics</a> account ID.'
 	),
 	array
