@@ -51,7 +51,15 @@ array
 	array
 	(
 		'Type'=>'Title',
-		'Value'=>'Gallery 2 module'
+		'Value'=>'Gallery 2 module Options'
+	),
+	array
+	(
+		'Type'=>'CheckBox',
+		'ID'=>'Gallery2Enabled',
+		'Label'=>'Enable Gallery 3 module',
+		'Description' => '',
+		'Default'=> 'false'
 	),
 	array
 	(
@@ -59,6 +67,34 @@ array
 		'ID'=>'GalleryURL',
 		'Label'=>'Random Image Gallery URL',
 		'Description'=>'This is the URL of your Gallery2 install <br /> ie: http://www.example.com/gallery'
+	),
+	array
+	(
+		Type=>'End'
+	),
+	array
+	(
+		'Type'=>'Title',
+		'Value'=>'Google Analytics Options'
+	),
+	array
+	(
+		'Type'=>'CheckBox',
+		'ID'=>'GoogleAnalyticsEnabled',
+		'Label'=>'Enable Google Analytics',
+		'Description' => '',
+		'Default'=> 'false'
+	),
+	array
+	(
+		'Type'=>'Text',
+		'ID'=>'GoogleAnalyticsID',
+		'Label'=>'Google Analytics ID',
+		'Description'=>''
+	),
+	array
+	(
+		Type=>'End'
 	),
 	array
 	(
