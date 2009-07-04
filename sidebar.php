@@ -1,14 +1,17 @@
 <div id="sidebar">
 	<ul>
-	<li><span class="sidetitle">Random Image</span></li>
-	<center>
-        <?php
-		global $Panel;
-		$G2URL = $Panel->Settings('GalleryURL');
+	<?php global $Panel;
+	$G2Enabled = $Panel->Settings('Gallery2Enabled');
+	$G2URL = $Panel->Settings('GalleryURL');
+	if ($G2Enabled == 'true') { ?>
+		<li><span class="sidetitle">Random Image</span></li>
+		<center>
+	        <?php
 		@readfile("$G2URL/main.php?g2_view=imageblock.External&g2_blocks=randomImage&g2_exactSize=200&g2_show=title|date");
-	?>
-        </center>
-	<?php 	/* Widgetized sidebar, if you have the plugin installed. */
+		?>
+	        </center>
+	<?php }
+ 	/* Widgetized sidebar, if you have the plugin installed. */
 	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 		<li><?php include (TEMPLATEPATH . '/searchform.php'); ?></li>
 );
