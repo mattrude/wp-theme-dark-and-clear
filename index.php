@@ -18,8 +18,10 @@
 						the_content('Click to continue &raquo;');
 					?>
 				</div><!--close entry class-->
-				
+			
+				<!--	
 				<p class="postmetadata">Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Responses &#187;', '1 Response &#187;', '% Responses &#187;'); ?> <?php the_tags('<br />Tags: ', ', ', '<br />'); ?></p>
+				-->
 			
 			</div><!--close post class and post# id-->
 			<?php } ?>
