@@ -58,7 +58,7 @@ array
 		'Type'=>'CheckBox',
 		'ID'=>'Gallery2Enabled',
 		'Label'=>'<strong>Enable Gallery 2 module</strong>',
-		'Description' => '',
+		'Description' => 'Note: this will not work well with a cache system such as <a href=http://ocaoimh.ie/wp-super-cache/>wp-super-cache</a>.',
 		'Default'=> 'false'
 	),
 	array
