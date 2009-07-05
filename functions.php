@@ -82,7 +82,7 @@ array
 		'Type'=>'CheckBox',
 		'ID'=>'GoogleAnalyticsEnabled',
 		'Label'=>'<strong>Enable Google Analytics</strong>',
-		'Description' => 'This module requres a <a href="http://analytics.google.com">Google Analytics</a> account. The Google Analytics code will NOT be displayed for logged in users.',
+		'Description' => 'This module requres a <a href="http://analytics.google.com">Google Analytics</a> account.<br />The Google Analytics code will NOT be displayed for logged in users.',
 		'Default'=> 'false'
 	),
 	array
