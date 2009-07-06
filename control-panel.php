@@ -116,7 +116,7 @@ class ControlPanel
 					break;
 				case 'Close':
 					$ToPrint .= '<p class="submit custom"><input name="save" type="submit" value="Save All Changes" /><input type="hidden" name="action" value="save" /></p>';
-					$ToPrint .= "</div></div>";
+					$ToPrint .= "<br>";
 					break;
 				case 'End':
 					$ToPrint .= "</div></div>";
@@ -168,27 +168,31 @@ class ControlPanel
 	$robotstxt_out = get_option('robots_txt');
 	
 	print '
-	<div class="wrap">
-	<h2>Robots.txt Editor</h2>
-	<p>Edit your robots.txt file in the space below. Lines beginning with <code>#</code> are treated as comments.</p>
-	<p>Using robots.txt, you can ban specific robots, ban all robots, or block robot access to specific pages or areas of your site. If you are not sure what to type, look at the bottom of this page for examples.</p>
-	<form method="post" action="http://'.$_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'].'">
-	<textarea id="robots_txt" name="robots_txt" rows="10" cols="45" class="widefat">'.$robotstxt_out.'</textarea>
-	<p class="submit" style="width:420px;"><input type="submit" value="Submit Robots.txt &raquo;" /></p>
-	</form>
+	<div class="stuffbox custom">
+		<h3 class="hndle">Robots.txt Editor</h3>
+		<div class="inside">
+			<div class="wrap">
+				<p>Edit your robots.txt file in the space below. Lines beginning with <code>#</code> are treated as comments.</p>
+				<p>Using robots.txt, you can ban specific robots, ban all robots, or block robot access to specific pages or areas of your site. If you are not sure what to type, look at the bottom of this page for examples.</p>
+				<form method="post" action="http://'.$_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'].'">
+					<textarea id="robots_txt" name="robots_txt" rows="10" cols="45" class="widefat">'.$robotstxt_out.'</textarea>
+					<p class="submit" style="width:420px;"><input type="submit" value="Submit Robots.txt &raquo;" /></p>
+				</form>
+				<h2>Robots.txt Samples</h2>
+				<h4>Ban all robots</h4>	
+				<blockquote><code>User-agent: *<br />Disallow: /</code></blockquote>
+				<h4>Allow all robots</h4>
+				<p>To allow any robot to access your entire site, you can simply leave the robots.txt
+				file blank, or you could use this:</p>
+				<blockquote><code>User-agent: *<br />Allow: /</code></blockquote>
+
+			</div>
+		</div>
 	</div>
 
 	<div class="wrap">
-	<h2>Robots.txt Samples</h2>
-	<h3>Ban all robots</h3>	
-	<blockquote><code><pre>User-agent: *
-Disallow: /</pre></code></blockquote>
-	
-	<h3>Allow all robots</h3>
-	<p>To allow any robot to access your entire site, you can simply leave the robots.txt file blank, or you could use this:</p>
-	<blockquote><code><pre>User-agent: *
-Disallow:</pre></code></blockquote>
-
+	</div>
+	</div>
 	</div>
 	';
 	}
