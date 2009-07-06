@@ -198,11 +198,5 @@ Disallow:</pre></code></blockquote>
 	}
 }
 
-function robots_txt_admin_page(){
-	add_submenu_page('options-general.php', 'KB Robots.txt', 'KB Robots.txt', 9, 'kb-robots-txt.php', 'robots_txt_options_page');
-}
-
 add_action('init', 'robots_txt');
-add_action('admin_menu', 'robots_txt_admin_page');
-
 ?>
