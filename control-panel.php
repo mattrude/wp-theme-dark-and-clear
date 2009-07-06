@@ -153,10 +153,56 @@ class ControlPanel
 			if($ToPrint) echo $ToPrint . '<br>';
 		}
 		echo '</form>';
+
+	if ( $_POST['robots_txt'] ){
+		update_option( 'robots_txt', $_POST['robots_txt'] );
+		$urlwarning = str_replace('http://', '', get_bloginfo('url') );
+		$urlwarning = substr( $urlwarning, 0, -1 );	// in case there is a trailing slash--don't want it so set off our warning
+		if ( strpos( $urlwarning, '/' ) )			// this is our warning checker
+			$urlwarning = '<p>It appears that your blog is installed in a subdirectory, not in a subdomain or at your domain\'s root. Be aware that search engines do not look for robots.txt files in subdirectories. <a href="http://www.robotstxt.org/wc/exclusion-admin.html">Read more</a>.</p>';
+		else
+			unset($urlwarning);
+		print '<div id="message" class="updated fade"><p><strong>Robots.txt updated.</strong> <a href="'.get_bloginfo('url').'/robots.txt">View robots.txt</a>.</p>'.$urlwarning.'</div>';
+	}
+	
+	$robotstxt_out = get_option('robots_txt');
+	
+	print '
+	<div class="wrap">
+	<h2>Robots.txt Editor</h2>
+	<p>Edit your robots.txt file in the space below. Lines beginning with <code>#</code> are treated as comments.</p>
+	<p>Using robots.txt, you can ban specific robots, ban all robots, or block robot access to specific pages or areas of your site. If you are not sure what to type, look at the bottom of this page for examples.</p>
+	<form method="post" action="http://'.$_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'].'">
+	<textarea id="robots_txt" name="robots_txt" rows="10" cols="45" class="widefat">'.$robotstxt_out.'</textarea>
+	<p class="submit" style="width:420px;"><input type="submit" value="Submit Robots.txt &raquo;" /></p>
+	</form>
+	</div>
+
+	<div class="wrap">
+	<h2>Robots.txt Samples</h2>
+	<h3>Ban all robots</h3>	
+	<blockquote><code><pre>User-agent: *
+Disallow: /</pre></code></blockquote>
+	
+	<h3>Allow all robots</h3>
+	<p>To allow any robot to access your entire site, you can simply leave the robots.txt file blank, or you could use this:</p>
+	<blockquote><code><pre>User-agent: *
+Disallow:</pre></code></blockquote>
+
+	</div>
+	';
 	}
 	function Settings($Option)
 	{
 		return $this->Settings[$Option];
 	}
 }
+
+function robots_txt_admin_page(){
+	add_submenu_page('options-general.php', 'KB Robots.txt', 'KB Robots.txt', 9, 'kb-robots-txt.php', 'robots_txt_options_page');
+}
+
+add_action('init', 'robots_txt');
+add_action('admin_menu', 'robots_txt_admin_page');
+
 ?>
