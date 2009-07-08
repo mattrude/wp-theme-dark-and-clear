@@ -110,30 +110,6 @@ array
 	array
 	(
 		'Type'=>'Title',
-		'Value'=>'Gallery 2 module Options'
-	),
-	array
-	(
-		'Type'=>'CheckBox',
-		'ID'=>'Gallery2Enabled',
-		'Label'=>'<strong>Enable Gallery 2 module</strong>',
-		'Description' => 'Note: this will not work well with a cache system such as <a href=http://ocaoimh.ie/wp-super-cache/>wp-super-cache</a>.',
-		'Default'=> 'false'
-	),
-	array
-	(
-		'Type'=>'Text',
-		'ID'=>'GalleryURL',
-		'Label'=>'<strong>Random Image Gallery URL</strong>',
-		'Description'=>'This is the URL of your Gallery2 install <br /> ie: http://www.example.com/gallery'
-	),
-	array
-	(
-		Type=>'End'
-	),
-	array
-	(
-		'Type'=>'Title',
 		'Value'=>'Google Analytics Options'
 	),
 	array
