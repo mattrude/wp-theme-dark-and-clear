@@ -824,6 +824,9 @@ span.tags {
 	letter-spacing: 1px;
 	border-bottom: 1px solid #DDD;
 }
+span.summary {
+	border: none;
+}
 form#commentform label {
 	font-weight: bold;
 }
