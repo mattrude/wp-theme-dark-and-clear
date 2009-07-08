@@ -20,9 +20,42 @@ function legacy_comments($file) {
 	
 	return $file;
 }
-/////////////////////////////
-// Adds robots.txt support //
-/////////////////////////////
+
+// Gallery 2 Widget 
+class Gallery_2_widget extends WP_Widget {
+	function Gallery_2_widget() {
+		parent::WP_Widget(false, $name = 'Gallery 2 Random Images');	
+		}
+	function widget($args, $instance) {
+		extract( $args );
+		?><li><span class="sidetitle">Random Image</span></li><center><?php
+		global $Panel;
+		$G2URL = esc_attr($instance['g2imageblock']); 
+		$G2SIZE = esc_attr($instance['g2imagesize']);
+		@readfile("$G2URL/main.php?g2_view=imageblock.External&g2_blocks=randomImage&g2_exactSize=$G2SIZE&g2_show=title|date");
+		?></center><?php
+	}
+	function update($new_instance, $old_instance) {				
+		return $new_instance;
+	}
+	function form($instance) {				
+		$G2URL = esc_attr($instance['g2imageblock']); 
+		$G2SIZE = esc_attr($instance['g2imagesize']);
+		_e('Gallery 2 URL:'); ?>
+		<p><input class="widefat" id="<?php echo $this->get_field_id('g2imageblock'); ?>" name="<?php echo $this->get_field_name('g2imageblock'); ?>" type="text" value="<?php echo $G2URL; ?>" />
+		<small>ie: http://www.example.com/gallery</small></p>
+
+		<p><small>Image size in pixels</small><br />
+		<input class="input" maxlength="4" size="4" id="<?php echo $this->get_field_id('g2imagesize'); ?>" name="<?php echo $this->get_field_name('g2imagesize'); ?>" type="text" value="<?php echo $G2SIZE; ?>" /></p>
+
+        <?php 
+    }
+
+}
+register_widget('Gallery_2_widget');
+
+
+// Adds robots.txt support
 $defaultrobotstxt = "# This is the defult robots.txt file
 User-agent: *
 Disallow:";
