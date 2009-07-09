@@ -56,7 +56,7 @@ register_widget('Gallery_2_widget');
 
 
 // Adds robots.txt support
-$defaultrobotstxt = "# This is the defult robots.txt file
+$defaultrobotstxt = "# This is the default robots.txt file
 User-agent: *
 Disallow:";
 
