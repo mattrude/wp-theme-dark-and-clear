@@ -5,7 +5,7 @@
 		<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 		<?php /* If this is a category archive */ if (is_category()) { ?>
 		<h1 class="pagetitle"><?php single_cat_title(); ?></h1><h3 class="pagetitle"> ...now browsing by category</h3>
-		<?php if(trim(category_description()) != "<br />") { ?>
+		<?php if(trim(category_description()) != "") { ?>
 		<div id="description"><?php echo category_description(); ?></div>
 		<? }?>
 		<div class="clearfloatthick">&nbsp;</div>
