@@ -30,7 +30,7 @@ if($comments) {
 
 <?php if (have_comments()) : ?>
 			
-	<h3 id="comments"><?php echo $comment_count . " Comments so far &darr;"; ?></h3>
+	<h3 id="comments"><?php echo $comment_count . " Comments"; ?></h3>
 
 	<ol class="commentlist">
 		<?php wp_list_comments(); ?>

@@ -857,6 +857,10 @@ h3.trackbacks {
 ol.tpbacks {
 	background: #CCC;
 	padding: 2px 2px 2px 25px;
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        border: 1px solid #CCC;
 }
 ol.tpbacks li {
 	list-style-position: outside;
