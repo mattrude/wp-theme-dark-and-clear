@@ -11,13 +11,14 @@ Author URI: http://www.mattrude.com
 
 */
 body {
-	font-size: 11px; /*Set font size so 1em = 10px*/
+	font-size: 10px; /*Set font size so 1em = 10px*/
 	background: #333;
 	color: #333;
 	margin: 20px 0;
 	text-align: center; /*Center site on page in IE*/
-/*	font-family: verdana, arial, tahoma, serif; */
-	font-family: Calibri;
+/*	font-family: verdana, arial, tahoma, serif;
+	font-family: Calibri; */
+	font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
 }
 a,
 a.link,
@@ -51,7 +52,7 @@ h1 a.standard:hover {
 }
 h1 a, h2 a {
 	text-decoration: none;
-	color: #000;
+	color: #333333;
 }
 h1 a:hover, h2 a:hover {
 	color: #446592;
@@ -98,6 +99,7 @@ h1.attr {
 	}
 h2 {
 	font-size: 2.4em;
+	color: #333333;
 	margin: 5px 0;
 	}
 h2.attr {
