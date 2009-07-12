@@ -41,37 +41,6 @@ if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <body <?php if(is_page() || is_single()) echo 'onload="hideTags();"'; ?>>
 
 <div id="container">
-<!--MDR Start-->
-<!--
-<b&nbsp;class="rtop">
-
-&nbsp;&nbsp;<b&nbsp;class="r1"></b>
-<b&nbsp;class="r2"></b>
-<b&nbsp;class="r3"></b>
-<b&nbsp;class="r4"></b>
-
-</b>
--->
-<!--MDR End-->
-	<div id="nav_menu">
-		<!--Main navigation menu-->
-		<ul>
-                <!--
-
-		<li><a <?php if(is_home()) echo 'class="current" '; ?>href="<?php bloginfo('url'); ?>" title="Home">Home</a></li>
-		<li><a <?php if(is_page('about')) echo 'class="current" '; ?>href="<?php bloginfo('url'); ?>/?page_id=2" title="About <?php bloginfo('name'); ?>">About</a></li>		
-
-                -->
-
-		<!--UNCOMMENT THE FOLLOWING SECTION OF CODE FOR NAVIGATION LINKS TO ARCHIVES,
-			ABOUT, FEED, AND SITEMAP
-		<li><a <?php if(is_archive() || is_page('archives')) echo 'class="current" '; ?>href="<?php bloginfo('url'); ?>/archives/" title="Visit the archives">Archives</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/feed/" title="RSS Feed">Feed</a></li>
-		<li><a href="<?php bloginfo('url'); ?>/sitemap/" title="Sitemap">Sitemap</a></li>
-		-->
-		
-		</ul>
-	</div><!--close nav_menu id-->
 	<div id="wrapper">
 		&nbsp; <!--Mozilla hack to show background-->
 		<div id="header">
