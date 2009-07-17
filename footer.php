@@ -2,6 +2,7 @@
 <div id="footer">
 	<p>
 		<?php global $Panel; echo $Panel->Settings('FooterText'); ?>
+		<br />Page took <?php timer_stop(1); ?> seconds to be created
 	</p>
 </div>
 </div>
