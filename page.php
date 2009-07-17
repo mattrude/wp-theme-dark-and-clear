@@ -14,6 +14,7 @@
 		</div>
 		<?php endwhile; endif; ?>
 	<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+	<?php comments_template(); ?>
 	</div>
 
 <?php get_sidebar(); ?>
