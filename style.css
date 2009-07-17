@@ -16,10 +16,12 @@ body {
 	color: #333;
 	margin: 20px 0;
 	text-align: center; /*Center site on page in IE*/
-/*	font-family: verdana, arial, tahoma, serif;
-	font-family: Calibri; */
-	font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+/*	font-family: verdana, arial, tahoma, serif; */
+/*	font-family: Calibri; */
+	font-family: Arial,Verdana,sans-serif;
 }
+/* Remove the Smiley face Icon from wordpress.com plugins */
+img#wpstats{width:0px;height:0px;overflow:hidden}
 a,
 a.link,
 a.visited {
@@ -84,7 +86,7 @@ h3.archives a.permalink {
 }
 	
 /*====: [STANDARD HTML STYLES] :================================*/
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: Calibri;
 	margin: 0 0 0 0;
 	font-weight: normal;
@@ -433,7 +435,7 @@ h2#tagline {
 #sidebar span.sidetitle {
 	color: #333;
 	padding: 3px;
-	text-transform: uppercase;
+/*	text-transform: uppercase; */
 	display: block;
 	font-family: Calibri;
 	font-weight: bold;
