@@ -28,12 +28,12 @@ class Gallery_2_widget extends WP_Widget {
 		}
 	function widget($args, $instance) {
 		extract( $args );
-		?><li><span class="sidetitle">Random Image</span></li><center><?php
+		?><li><span class="sidetitle">Random Image</span><center><?php
 		global $Panel;
 		$G2URL = esc_attr($instance['g2imageblock']); 
 		$G2SIZE = esc_attr($instance['g2imagesize']);
 		@readfile("$G2URL/main.php?g2_view=imageblock.External&g2_blocks=randomImage&g2_exactSize=$G2SIZE&g2_show=title|date");
-		?></center><?php
+		?></center></li><?php
 	}
 	function update($new_instance, $old_instance) {				
 		return $new_instance;
