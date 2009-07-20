@@ -43,7 +43,7 @@ if($comments) {
 
 	 <?php else : // comments are closed ?>
 		<!-- If comments are closed. -->
-		<p class="nocomments">Comments are closed.</p>
+		<p class="nocomments"></p>
 
 	<?php endif; ?>
 <?php endif; ?>
