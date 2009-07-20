@@ -355,11 +355,8 @@ h2#tagline {
 	}
 /*====: [RSS & EMAIL SUBSCRIBE LINKS] :==========================*/
 #subscribe {
-	position: absolute;
-	width: 35px;
-	left: 0px;
-	bottom: 0px;
 	text-align: center;
+	width: 35px;
 }
 #subscribe a img {
 	border: none;
