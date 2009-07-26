@@ -329,15 +329,8 @@ h2#tagline {
 	position: relative;
 	margin: 0;
 }
-#headerimg {
-	margin: 0 auto;
-/*	width: 850px;
-	hight: 200px;*/
-	clear: both;
-/*      -moz-border-radius: 14px;
-        -webkit-border-radius: 14px;
-        border-radius: 14px;
-	border: 1px solid #CCC;*/
+#headerimg img {
+	border:	none;
 }
 #content {
 	margin: 5px 35px 0;
