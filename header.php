@@ -7,7 +7,7 @@
 <?php wp_head(); ?>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-<title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title>
+<title><?php wp_title(' - ', true, 'right'); ?>Matt Rude</title>
 
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
@@ -20,7 +20,7 @@
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<script src="<?php bloginfo('template_url'); ?>/js/ThemeJS.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/ThemeJS.js" type="text/javascript"></script>
 <?php 
 global $Panel;
 $LBEnabled = $Panel->Settings('LightboxEnabled');
@@ -63,9 +63,9 @@ if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 			
 			<div id="headerimg">
 				<?php if(is_home()) { ?>
-					<a href="/banner-images/"><img src="<?php bloginfo('template_url'); ?>/images/header_images/header4.jpg" title="<?php bloginfo('name'); ?> Random Header Image" /></a>
+					<a href="/banner-images/"><img src="<?php bloginfo('template_url'); ?>/images/header_images/header4.jpg" alt="" title="<?php bloginfo('name'); ?> Random Header Image" /></a>
 				<?php }else{ ?>
-					<a href="/banner-images/"><img src="<?php bloginfo('template_url'); ?>/rotate.php" title="<?php bloginfo('name'); ?> Random Header Image" /></a>
+					<a href="/banner-images/"><img src="<?php bloginfo('template_url'); ?>/rotate.php" alt="" title="<?php bloginfo('name'); ?> Random Header Image" /></a>
 				<?php } //endif ?>
 			</div>
 		</div><!--close header id-->
