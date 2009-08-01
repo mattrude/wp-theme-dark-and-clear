@@ -7,7 +7,7 @@
 <?php wp_head(); ?>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-<title><?php wp_title(' - ', true, 'right'); ?>Matt Rude</title>
+<title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
@@ -58,7 +58,7 @@ if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 			-->
 			
 			<div id="masthead_wrapper">
-				<h1 id="masthead"><a class="standard" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1><h2 id="tagline"><?php bloginfo('description'); ?></h2>
+				<h1 id="masthead"><a class="standard" href="<?php bloginfo('url'); ?>">mattrude.com</a></h1><h2 id="tagline"><?php bloginfo('description'); ?></h2>
 			</div>
 			
 			<div id="headerimg">
