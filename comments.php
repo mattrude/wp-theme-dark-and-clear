@@ -28,12 +28,12 @@ if($comments) {
 } //endif
 ?>
 
-<?php if (have_comments()) : ?>
+<?php if ($comment_count = 0) : ?>
 			
 	<h3 id="comments"><?php echo $comment_count . " Comments"; ?></h3>
 
 	<ol class="commentlist">
-		<?php wp_list_comments(); ?>
+		<?php wp_list_comments('type=comment'); ?>
 	</ol>
 
  <?php else : // this is displayed if there are no comments so far ?>
