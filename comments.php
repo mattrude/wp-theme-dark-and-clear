@@ -28,7 +28,7 @@ if($comments) {
 } //endif
 ?>
 
-<?php if (have_comments()) : ?>
+<?php if ($comment_count = 0) : ?>
 			
 	<h3 id="comments"><?php echo $comment_count . " Comments"; ?></h3>
 
