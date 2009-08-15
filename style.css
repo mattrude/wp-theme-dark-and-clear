@@ -942,6 +942,21 @@ a#cancel-comment-reply-link:hover {
 	border-color: #000;
 }
 	 
+#tweet_post {
+	font-size: 1.8em;
+	margin-bottom: 10px;
+        margin-top: 40px;
+	font-weight: bold;
+}
+
+#tweet_date {
+	color: #AAA;
+	font-size: .5em;
+}
+
+#tweet_head {
+	font-size: 1.5em;
+}
 
 /*====: [SEARCH RESULTS PAGE] :============================*/
 #searchdate {
