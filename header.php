@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 
 <head>
-<link rel='shortcut icon' href='http://www.mattrude.com/favicon.ico' />
+<link rel='shortcut icon' href='<?php bloginfo('template_url') ?>/images/favicon.ico' />
 <?php wp_head(); ?>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
