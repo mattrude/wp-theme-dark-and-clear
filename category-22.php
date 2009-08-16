@@ -11,7 +11,7 @@
 		<?php while (have_posts()) : the_post(); ?>
 			<div <?php post_class(); ?>>
 			<div id=tweet_post>
-				<img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.jpg" width="50" height="50" align='left' style='margin-right: 5px;' />
+				<img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.jpg" width="45" height="45" align='left' style='margin-right: 5px;' />
 				<?php the_excerpt(); ?>
 			</div>
 			<div id=tweet_date>
