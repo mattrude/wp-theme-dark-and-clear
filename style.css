@@ -942,12 +942,16 @@ a#cancel-comment-reply-link:hover {
 	border-color: #000;
 }
 	 
+#tweet_template {
+	position:relative
+}
 #tweet_post {
 	font-size: 20px;
         margin-top: 30px;
 	margin-bottom: 5px;
 	font-weight: bold;
-	height: 45px;
+	height: 65px;
+	top:50%;
 }
 
 #tweet_date {

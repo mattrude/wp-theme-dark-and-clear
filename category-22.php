@@ -9,9 +9,9 @@
 	</div>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
-			<div <?php post_class(); ?>>
+			<div <?php post_class(); ?> id="tweet_template">
 			<div id=tweet_post>
-				<img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.jpg" width="45" height="45" align='left' style='margin-right: 5px;' />
+				<img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.jpg" width="60" height="60" align='left' style='margin-right: 5px;' />
 				<?php the_excerpt(); ?>
 			</div>
 			<div id=tweet_date>
