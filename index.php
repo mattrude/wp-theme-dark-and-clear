@@ -2,7 +2,7 @@
 
 <div id="content" class="homepage">
 	<?php if (have_posts()) : ?>
-
+		<?php query_posts('showposts=500'); ?>
 		<!--This is "The Loop"-->
 		<?php while (have_posts()) : the_post(); ?>
 			<?php if ( in_category( 'General' )) { ?>
@@ -27,12 +27,10 @@
 			<?php } ?>
 		<?php endwhile; ?>
 		
-		<!--
 		<div class="navigation">
 			<div class="txtalignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
 			<div class="txtalignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
 		</div>
-		-->
 	<?php else : ?>
 
 		<h2 class="center">Oops! Couldn't find what you were looking for. Maybe you'll want to search for it:</h2>
