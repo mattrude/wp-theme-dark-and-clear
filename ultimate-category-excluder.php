@@ -1,18 +1,10 @@
 <?php
-/*
-Plugin Name: Ultimate Category Excluder
-Plugin URI: http://www.planetmike.com/plugins/ultimate-category-excluder/
-Description: Easily exclude categories from your front page, feeds, and archives.
-Author: Michael Clark
-Version: 0.3
-Author URI: http://www.planetmike.com
-*/
 
 add_action('admin_menu', 'ksuce_admin_menu');
 add_filter('pre_get_posts','ksuce_exclude_categories');
 
 function ksuce_admin_menu() {
-	add_options_page( 'Ultimate Category Excluder Options', 'Category Exclusion', 9, basename(__FILE__), 'ksuce_options_page');
+	add_options_page( 'Category Exclusion', 'Category Exclusion', 9, basename(__FILE__), 'ksuce_options_page');
 }
 
 function ksuce_options_page() {
