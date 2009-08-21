@@ -1,26 +1,49 @@
-wp-Theme-Dark-and-Clear 
-A WordPress theme by Matt Rude - http://www.mattrude.com
+Wordpress Theme Dark and Clear
 
------------------------------------------------------------------------------------------
-REQUIREMENTS:
------------------------------------------------------------------------------------------
+   1. Features
+   2. Wanted Features/Bugs
+         1. Options still needed in the Control Panel
+   3. Notable Changes
+   4. Git Commit Change Log
 
------------------------------------------------------------------------------------------
-MAJOR FEATURES:
------------------------------------------------------------------------------------------
 
------------------------------------------------------------------------------------------
-INSTALLATION:
------------------------------------------------------------------------------------------
+Features
 
------------------------------------------------------------------------------------------
-SOME USEFUL NOTES:
------------------------------------------------------------------------------------------
+    * Google Analytics Support (analytics.google.com)
+    * Lightbox 2 support (www.huddletogether.com/projects/lightbox2)
+    * Gallery 2 random image block (gallery.menalto.com)
+    * Random header images (ma.tt/scripts/randomimage)
+    * Category Exclusion (Main, RSS, Archive)
+    * Customisable Footer
+    * Customisable rotbots.txt
+    * CCS update for Wickett Twitter plugin
+    * Licenced under the GPLv2
 
------------------------------------------------------------------------------------------
-MORE INFORMATION:
------------------------------------------------------------------------------------------
+Wanted Features/Bugs
 
------------------------------------------------------------------------------------------
-CHANGELOG:
------------------------------------------------------------------------------------------
+    * W3 compliance
+    * Auto set rel=lightbox for images when lightbox support is enabled
+    * "« Older Entries" link on main page when there are not any
+    * Yellow box on top of Category page
+    * Logged in users should NOT be counted by Google Analytics
+
+Options still needed in the Control Panel
+
+    * Category Exclusion
+    * Random header image on main page(Yes/No)?
+          o if no, what static image would you like?
+    * Upload new images and display already uploaded images
+    * Customisable fav-icon
+    * Category's to display on the main page
+    * Add enable/disable page creation time in footer
+    * Main page title
+    * Clean-up robots.txt options
+
+
+Known Bugs
+
+    * Logged in users are not counted with Google Analytics
+
+Git Commit Change Log
+http://github.com/mattrude/wp-Theme-Dark-and-Clear/commits
+
