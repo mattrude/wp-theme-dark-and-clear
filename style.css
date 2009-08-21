@@ -1027,10 +1027,11 @@ div.search_hr {
 
 /*====: [Start Wickett Twitter plugin] :=================*/
 .tweets li {
+	color: #222222;
 	display: block;
-	font-family:Arial,verdana,tahoma,Helvetica,sans-serif;
-	font-size:1.1em;
+	font-family: Arial,verdana,tahoma,Helvetica,sans-serif;
 	margin:0 5px 10px 0 !important;
+	text-decoration: none;
 	list-style-type: circle !important;
 	list-style-position: inside !important;
 	list-style-image: url(bullet.gif);
@@ -1039,13 +1040,11 @@ div.search_hr {
 	margin: 5!;
 	color: #222;
         padding: 7px;
-        font-size: 1.1em;
 }
 #sidebar .tweets a {
 	display: inline; 
 	color:#222222;
 	font-family:Arial,verdana,tahoma,Helvetica,sans-serif;
-	font-size:1.1em;
 	padding: 0;
 	text-decoration:none;
 }
