@@ -1,4 +1,5 @@
 Wordpress Theme Dark and Clear
+Version 0.1
 
    1. Features
    2. Wanted Features/Bugs
@@ -14,6 +15,7 @@ Features
     * Gallery 2 random image block (gallery.menalto.com)
     * Random header images (ma.tt/scripts/randomimage)
     * Category Exclusion (Main, RSS, Archive)
+    * Native Gallery Support
     * Customisable Footer
     * Customisable rotbots.txt
     * CCS update for Wickett Twitter plugin
