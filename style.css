@@ -1218,3 +1218,24 @@ form p {
 #overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
 /*====: End Lightbox 2 :======================*/
 
+.gallerypost {
+background-color:#fff;
+display: block;
+height: 200px;
+margin: 0px 0px 10px 0px;
+padding: 10px 0px 10px 0px;
+overflow: hidden;
+}
+.gallerypost_body {
+float: right;
+width: 350px;
+}
+.gallerypost_sub {
+vertical-align: bottom;
+margin-top: 84px;
+}
+.gallerypost_thumbnail {
+vertical-align: center;
+margin-right: 30px;
+}
+
