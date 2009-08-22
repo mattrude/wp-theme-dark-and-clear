@@ -21,9 +21,7 @@ $cat_title = '<a href="'.get_category_link(intval(get_query_var('cat'))).'">'.si
 			<div class="entry">
 				<?php the_excerpt(); ?>
 			</div>
-			<!--
-			<p>This Album contains <?php echo get_children( 'post_type=attachment&post_mime_type=image' ); ?> items.</p>
-			-->
+			<p>This Album contains <?php echo $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE post_parent = '$post->ID' AND post_type = 'attachment'" ); ?> items.</p>
 		</div>
 		<div id="gallerypost_sub-<?php the_ID(); ?>" class="gallerypost_sub">
 			<?php echo get_the_term_list( $post->ID, 'people', 'Who: ', ', ', '<br />' ); ?>
