@@ -10,6 +10,7 @@ Version 0.1
 
 Features
 
+  Version 0.1
     * Google Analytics Support (analytics.google.com)
     * Lightbox 2 support (www.huddletogether.com/projects/lightbox2)
     * Gallery 2 random image block (gallery.menalto.com)
