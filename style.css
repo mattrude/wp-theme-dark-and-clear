@@ -1221,21 +1221,35 @@ form p {
 .gallerypost {
 background-color:#fff;
 display: block;
-height: 200px;
+height: 250px;
 margin: 0px 0px 10px 0px;
 padding: 10px 0px 10px 0px;
 overflow: hidden;
+border-bottom: 1px solid #D2C4A2;
 }
 .gallerypost_body {
 float: right;
 width: 350px;
+height: 220px;
+margin: 0px 0px 10px 0px;
+}
+.gallerypost_body p {
+margin: 50px 0px 0px 0px;
+}
+.gallerypost_body .entry p {
+margin: 0px 0px 0px 0px;
+}
+.gallerypost_body .entry {
+margin: 0px 0px 0px 0px;
 }
 .gallerypost_sub {
 vertical-align: bottom;
-margin-top: 84px;
+padding: 210px 0px 0px 0px;
+width 200px;
+height 30px;
 }
-.gallerypost_thumbnail {
-vertical-align: center;
-margin-right: 30px;
+.gallerypost_thumbnail a {
+width: 205px;
+color: #000;
 }
 
