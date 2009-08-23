@@ -29,9 +29,12 @@ if ( is_user_logged_in() ) {
 			var pageTracker = _gat._getTracker("<?php echo $GAID; ?>");
 			pageTracker._trackPageview();
 			} catch(err) {}</script>
-<?php 		}
-	}
-
+<?php 		} else {
+			?><!--No user is logged in and Google Analytics is enabled, but there is not Google Analytics ID filled in-->
+<?php		}
+	} else {
+		?><!--No user is logged in and Google Analytics is disabled-->
+<?php	}
 } ?>
 <!--Closeing tags-->
 </body>
