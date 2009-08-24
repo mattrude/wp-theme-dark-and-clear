@@ -29,6 +29,7 @@
 				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 	
 			</div><!--close entry class-->
+			<?php echo related_pages() ?>
 			<p class="postmetadata1 alt">
 					<small>
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
