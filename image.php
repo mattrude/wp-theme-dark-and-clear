@@ -25,8 +25,7 @@
 	</div>
 	-->
 			</div><!--close entry class-->
-			<p class="postmetadata">Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?><br /><?php the_tags('Tags: ', ', ', '<br />'); ?></p>
-			<p class="postmetadata1 alt">
+			<br />
 					<small>
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// Both Comments and Pings are open ?>
