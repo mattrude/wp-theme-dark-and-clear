@@ -14,7 +14,7 @@
 			<div class="image_entry">
 				<p class="attachment"><?php echo wp_get_attachment_image( $post->ID, 'medium' ); ?></p>
 				<div class="caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt(); // this is the "caption" ?></div>
-
+				<p><a class="wrapper" href="<?php echo get_permalink($post->post_parent); ?>" rev="up post">&larr; <?php printf(__('back to &#8220;%s&#8221;', 'carrington-blog'), get_the_title($post->post_parent)); ?></a></p>
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
 	
 	<!--
