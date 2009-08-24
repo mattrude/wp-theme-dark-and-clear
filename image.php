@@ -12,7 +12,7 @@
 			<!--<h1><?php the_title(); ?></h1>-->
 			<small class="attr"><?php the_time('F jS, Y') ?></small>
 			<div class="image_entry">
-				<p class="attachment"><a href="<?php echo wp_get_attachment_url($post->ID); ?>"><?php echo wp_get_attachment_image( $post->ID, 'medium' ); ?></a></p>
+				<p class="attachment"><?php echo wp_get_attachment_image( $post->ID, 'medium' ); ?></p>
 				<div class="caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt(); // this is the "caption" ?></div>
 
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
