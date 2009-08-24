@@ -1,6 +1,6 @@
 <?php require_once('header_simple.php'); ?>
 
-<div id="content">
+<div id="image_content">
 
 <div id="adunit">
 	<img src="<?php bloginfo('template_url'); ?>/images/ad-unit_468x60_07-04-08.gif" width="468" height="60" />
@@ -11,7 +11,7 @@
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<!--<h1><?php the_title(); ?></h1>-->
 			<small class="attr"><?php the_time('F jS, Y') ?></small>
-			<div class="entry">
+			<div class="image_entry">
 				<p class="attachment"><a href="<?php echo wp_get_attachment_url($post->ID); ?>"><?php echo wp_get_attachment_image( $post->ID, 'medium' ); ?></a></p>
 				<div class="caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt(); // this is the "caption" ?></div>
 

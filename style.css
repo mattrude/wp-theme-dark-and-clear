@@ -1253,3 +1253,24 @@ width: 205px;
 color: #000;
 }
 
+/* ===== Image Page ===== */
+.image_entry p{
+        margin: 20px 0;
+	display: block;
+	float: center;
+        margin-left: auto !important;
+        margin-right: auto !important;
+}
+.image_entry img {
+	float: center;
+	border: 1px solid #CCC;
+}
+#image_content {
+        margin: 5px 35px 0;
+        font-size: 1.2em;
+        float: left;
+        display: inline;
+}
+#caption {
+
+}
