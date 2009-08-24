@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php require_once('header_simple.php'); ?>
 
 <div id="content">
 
