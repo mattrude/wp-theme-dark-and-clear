@@ -9,7 +9,7 @@
 	
 	<div class="single"><!--Slightly different styling for single posts and single pages-->
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h1><?php the_title(); ?></h1>
+			<!--<h1><?php the_title(); ?></h1>-->
 			<small class="attr"><?php the_time('F jS, Y') ?></small>
 			<div class="entry">
 				<p class="attachment"><a href="<?php echo wp_get_attachment_url($post->ID); ?>"><?php echo wp_get_attachment_image( $post->ID, 'medium' ); ?></a></p>
@@ -17,11 +17,13 @@
 
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
 	
+	<!--
 	<div class="navigation">
 		<div class="floatleft"><?php previous_image_link('&laquo; %link') ?></div>
 		<div class="floatright"><?php next_image_link('%link &raquo;') ?></div>
 		<div class="clearfloatthick">&nbsp;</div>
 	</div>
+	-->
 			</div><!--close entry class-->
 			<p class="postmetadata">Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?><br /><?php the_tags('Tags: ', ', ', '<br />'); ?></p>
 			<p class="postmetadata1 alt">
@@ -57,5 +59,4 @@
 <?php endif; ?>
 
 	</div><!--close content id-->
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
