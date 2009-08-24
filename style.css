@@ -12,6 +12,7 @@ Author URI: http://www.mattrude.com
 */
 body {
 	font-size: 10px; /*Set font size so 1em = 10px*/
+	background: #333;
 	color: #333;
 	margin: 20px 0;
 	text-align: center; /*Center site on page in IE*/
@@ -316,6 +317,10 @@ h2#tagline {
 	background: #FFF;
 	margin: 0;
 	padding: 0;
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+	border: 1px solid #CCC;
 	}
 #header {
 	width: 100%;
