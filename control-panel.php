@@ -59,8 +59,6 @@ class ControlPanel
 			
 			}
 		}
-		wp_enqueue_script('control-panel', get_bloginfo('template_url').'/js/control-panel.js', array('jquery'), '1.0');
-		wp_enqueue_script('jquery-form', get_bloginfo('template_url').'/js/jquery.form.js', array('jquery'), '1.0');
 	}
 	function AdminMenu()
 	{
@@ -69,7 +67,9 @@ class ControlPanel
 	
 	function AdminHead()
 	{
+		echo '<script type="text/javascript" src="'.get_bloginfo('template_url').'/js/control-panel.js?ver=1.0"></script>';
 		echo '<link rel="stylesheet" href="'.get_bloginfo('template_url').'/control-panel.css" type="text/css" media="screen" />';
+		wp_enqueue_script('jquery-form', get_bloginfo('template_url').'/js/jquery.form.js', array('jquery'), '1.0');
 	}
 	function SetOptions($Options)
 	{
