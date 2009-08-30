@@ -1,6 +1,5 @@
 <?php
-require_once('control-panel.php');
-#require_once('category-excluder.php');
+require_once('functions/control-panel.php');
 
 if(function_exists('register_sidebar'))
 	register_sidebar(array (

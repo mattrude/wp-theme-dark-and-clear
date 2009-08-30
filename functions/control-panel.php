@@ -154,6 +154,51 @@ class ControlPanel
 		}
 		echo '</form>';
 
+function ce_options_page() {
+	if( $_POST[ 'ce' ] ) {
+		$message = ce_process();
+	}
+	$options = ce_get_options();
+	?>
+	<div class="wrap">
+		<h2>Ultimate Category Excluder Options</h2>
+		<?php echo $message ?>
+		<p>Use this page to select the categories you wish to exclude and where you would like to exclude them from.</p>
+	<form action="options-general.php?page=ultimate-category-excluder.php" method="post">
+	<table class="widefat">
+		<thead>
+			<tr>
+				<th scope="col">Category</th>
+				<th scope="col">Exclude from Main Page?</th>
+				<th scope="col">Exclude from Feeds?</th>
+				<th scope="col">Exclude from Archives?</th>
+			</tr>
+		</thead>
+		<tbody id="the-list">
+	<?php
+		//print_r( get_categories() );
+		$cats = get_categories();
+		$alt = 0;
+		foreach( $cats as $cat ) {
+			?>
+			<tr<?php if ( $alt == 1 ) { echo ' class="alternate"'; $alt = 0; } else { $alt = 1; } ?>>
+				<th scope="row"><?php echo $cat->cat_name; //. ' (' . $cat->cat_ID . ')'; ?></th>
+				<td>
+					<input type="checkbox" name="exclude_main[]" value="-<?php echo $cat->cat_ID ?>" <?php if ( in_array( '-' . $cat->cat_ID, $options['exclude_main'] ) ) { echo 'checked="true" '; } ?>/>
+				</td>
+				<td><input type="checkbox" name="exclude_feed[]" value="-<?php echo $cat->cat_ID ?>" <?php if ( in_array( '-' . $cat->cat_ID, $options['exclude_feed'] ) ) { echo 'checked="true" '; } ?>/></td>
+				<td><input type="checkbox" name="exclude_archives[]" value="-<?php echo $cat->cat_ID ?>" <?php if ( in_array( '-' . $cat->cat_ID, $options['exclude_archives'] ) ) { echo 'checked="true" '; } ?>/></td>
+			</tr>			
+		<?php
+		}
+	?>
+	</table>
+	<p class="submit"><input type="submit" value="Update" /></p>
+	<input type="hidden" name="ce" value="true" />
+	</form>
+	</div><?php
+}
+
 	if ( $_POST['robots_txt'] ){
 		update_option( 'robots_txt', $_POST['robots_txt'] );
 		$urlwarning = str_replace('http://', '', get_bloginfo('url') );
