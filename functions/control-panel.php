@@ -163,7 +163,8 @@ class ControlPanel
 		<h2>Category Excluder Options</h2>
 		<?php echo $message ?>
 		<p>Use this section allows you to select the categories you wish to exclude and where you would like to exclude them from.</p>
-	<form action="options-general.php?page=ultimate-category-excluder.php" method="post">
+		<p>Note: If a post is in more the one category, it will be excluded if it matches any of the excluded categories</p>
+	<form action="themes.php?page=control-panel.php" method="post">
 	<table class="widefat">
 		<thead>
 			<tr>
