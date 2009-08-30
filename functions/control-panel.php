@@ -154,16 +154,15 @@ class ControlPanel
 		}
 		echo '</form>';
 
-function ce_options_page() {
 	if( $_POST[ 'ce' ] ) {
 		$message = ce_process();
 	}
 	$options = ce_get_options();
 	?>
 	<div class="wrap">
-		<h2>Ultimate Category Excluder Options</h2>
+		<h2>Category Excluder Options</h2>
 		<?php echo $message ?>
-		<p>Use this page to select the categories you wish to exclude and where you would like to exclude them from.</p>
+		<p>Use this section allows you to select the categories you wish to exclude and where you would like to exclude them from.</p>
 	<form action="options-general.php?page=ultimate-category-excluder.php" method="post">
 	<table class="widefat">
 		<thead>
@@ -197,7 +196,6 @@ function ce_options_page() {
 	<input type="hidden" name="ce" value="true" />
 	</form>
 	</div><?php
-}
 
 	if ( $_POST['robots_txt'] ){
 		update_option( 'robots_txt', $_POST['robots_txt'] );
