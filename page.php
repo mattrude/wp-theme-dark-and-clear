@@ -8,8 +8,14 @@
 			<div class="entry">
 				<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 
-				<!--Add Related Pages if Yet Another Related Posts Plugin is installed-->
-				<?php if (function_exists('related_pages')) { echo related_pages(); }?>
+				<!--Add Related Entries if Yet Another Related Posts Plugin is installed-->
+				<?php global $wp_query; ?>
+                        	<?php $related_entries = get_post_meta( $wp_query->post->ID, 'Display Related Entries', true ); ?>
+				<?php if (function_exists('related_entries')) { 
+					if ($related_entries == '1') {
+						echo related_entries();
+					}
+				}?>
 				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
 			</div>
