@@ -850,18 +850,13 @@ form#commentform textarea {
 
 h3.trackbacks {
 	clear: both;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 ol.tpbacks {
-	background: #CCC;
 	padding: 2px 2px 2px 25px;
-        -moz-border-radius: 12px;
-        -webkit-border-radius: 12px;
-        border-radius: 12px;
-        border: 1px solid #CCC;
 }
 ol.tpbacks li {
-	list-style-position: outside;
+	display: block;
 }
 
 /*====: [WP 2.7 COMMENT STYLES] :======================*/
