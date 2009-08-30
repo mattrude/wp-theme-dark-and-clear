@@ -53,7 +53,7 @@ if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 				<?php if(is_home()) { ?>
 					<a href="/banner-images/"><img src="<?php bloginfo('template_url'); ?>/images/header_images/header4.jpg" alt="" title="<?php bloginfo('name'); ?> Random Header Image" /></a>
 				<?php }else{ ?>
-					<a href="/banner-images/"><img src="<?php bloginfo('template_url'); ?>functions/rotate.php" alt="" title="<?php bloginfo('name'); ?> Random Header Image" /></a>
+					<a href="/banner-images/"><img src="<?php bloginfo('template_url'); ?>/functions/rotate.php" alt="" title="<?php bloginfo('name'); ?> Random Header Image" /></a>
 				<?php } //endif ?>
 			</div>
 		</div><!--close header id-->
