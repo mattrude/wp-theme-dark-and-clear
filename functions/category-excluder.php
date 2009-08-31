@@ -3,10 +3,6 @@
 add_action('admin_menu', 'ce_admin_menu');
 add_filter('pre_get_posts','ce_exclude_categories');
 
-function ce_admin_menu() {
-	add_options_page( 'Ultimate Category Excluder Options', 'Category Exclusion', 9, basename(__FILE__), 'ce_options_page');
-}
-
 function ce_process() {
 	//echo '<pre>'; print_r( $_POST );
 	if( !$_POST[ 'exclude_main' ] ) {
