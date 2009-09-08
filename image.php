@@ -2,9 +2,6 @@
 
 <div id="image_content">
 
-<div id="adunit">
-	<img src="<?php bloginfo('template_url'); ?>/images/ad-unit_468x60_07-04-08.gif" width="468" height="60" />
-</div>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
 	<div class="single"><!--Slightly different styling for single posts and single pages-->
