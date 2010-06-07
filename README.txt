@@ -1,5 +1,5 @@
 Wordpress Theme Dark and Clear
-Version 0.1
+Version 0.2
 
    1. Features
    2. Wanted Features/Bugs
@@ -9,6 +9,9 @@ Version 0.1
 
 
 Features
+  Version 0.2
+   * Added Category excluder
+   * Added Related Pages
 
   Version 0.1
     * Google Analytics Support (analytics.google.com)
